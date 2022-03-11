@@ -1,9 +1,5 @@
 .App {
-  position: relative;
-width: 414px;
-height: 896px;
-
-background: rgb(209, 206, 206);
+  text-align: center;
 }
 
 .App-logo {
@@ -40,3 +36,49 @@ background: rgb(209, 206, 206);
     transform: rotate(360deg);
   }
 }
+
+
+/* new card in AddCard.js */
+
+.newcard {
+
+  position: relative;
+  width: 382px;
+  height: 241px;
+  margin: 10px auto;
+
+  background: linear-gradient(248.3deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0) 100%), #D0D0D0;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+
+
+}
+
+.cardnumber input {
+  position: relative;
+  width: 382px;
+  height: 30px;
+  margin: 0 auto;
+  font-size: large;
+
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.cardnumber  {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 382px;
+  text-align: left;
+}
+
+.cardnumber label {
+  font-size: 12px;
+  font-style: normal;
+}
+
+
+/* använd transform i css på cardstacken **/

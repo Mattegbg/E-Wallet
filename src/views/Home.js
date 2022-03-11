@@ -1,9 +1,15 @@
+import Top from '../components/Top';
+import CardStack from '../components/CardStack';
 
 
-function Home() {
+function Home(props) {
     return (
-        <h1>Detta är startsidan</h1>
-    )
+        <section>
+        <Top headline='E-Wallet' />
+        <CardStack cards={props.cards}/>
+        </section>
+        
+    );
 }
 
 export default Home;
