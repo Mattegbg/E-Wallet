@@ -40,7 +40,7 @@
 
 /* new card in AddCard.js */
 
-.newcard {
+.card {
 
   position: relative;
   width: 382px;
@@ -82,3 +82,35 @@
 
 
 /* använd transform i css på cardstacken **/
+
+
+/* css ändra färgen på korten */
+
+.Blockchain {
+  background-color: #7f51e3 !important;
+}
+
+.Bitcoin {
+  background-color: #ffb444 !important;
+}
+
+.Ninja {
+  background-color: #333333 !important;
+  color: #bbbbbb !important;
+}
+
+.Evil {
+  background-color: #db2f4e !important;
+}
+
+/* deleteknappen */
+
+.delete {
+  display: none;
+
+}
+
+.selected:hover .delete {
+  display: unset;
+  
+}
