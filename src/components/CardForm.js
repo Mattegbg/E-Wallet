@@ -43,7 +43,7 @@ function CardForm(props) {
 
             <div className="cardnumber">
                 <label> Card number </label>
-                <input onChange={updateAddCard} id="cardnumber" type="text" name="cardnumber" placeholder="cardnumber" maxLength="16"  />
+                <input onChange={updateAddCard} id="cardnumber" type="text" name="cardnumber" placeholder="cardnumber" maxLength="19"  />
 
             </div>
 

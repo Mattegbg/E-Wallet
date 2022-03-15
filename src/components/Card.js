@@ -49,17 +49,38 @@ function Card(props) {
     return (
 
         //(kolla om detta finns) ? (om det finns visa detta) : (annars visa detta) på kortet i addcard 
-        <div className={className} onClick={selectThisCard}>
+        <div className='motherDiv'>
+            <div className='deleteButton'>
+                <p className='delete' onClick={removeThisCard}>Delete</p>
+            </div>
+            <div className='cardbox'>
+                <div className={className} onClick={selectThisCard}>
+                
+                                
 
-            <p className='delete' onClick={removeThisCard}>Delete</p>
-            <img src={chipLight} alt="chip" className='cardchip'></img>
-            <img src={cardMakeLogo} alt="cardMake" className='cardMaker'></img>
-            <h2 className="cardHolderNumber"> {card.cardNumber ? card.cardNumber : "**** **** **** ****"} </h2>
-            <h4 className="cardHolder"> {card.cardName ? card.cardName : "YOUR NAME"} </h4>
-            <h5 className="cardValidThru"> {card.cardExpiry ? card.cardExpiry : "YY/MM"} </h5>
-            <h4 className="cardValidDate"> {card.cardMake ? card.cardMake : "CHOOSE BANK"} </h4>
+
+                    <img src={chipLight} alt="chip" className='cardchip'></img>
+                    <img src={cardMakeLogo} alt="cardMake" className='cardMaker'></img>
+                    <h2 className="cardHolderNumber"> {card.cardNumber ? card.cardNumber : "**** **** **** ****"} </h2>
+                    
+                    <div className='nameMonthText'>
+                        <div>
+                            <h5>CARDHOLDER NAME</h5>
+                            <h4 className="cardHolder"> {card.cardName ? card.cardName : "YOUR NAME"} </h4>
+                        </div>
+                        <div>
+                        <h5>YY/MM</h5>
+                        <h4 className="cardValidThru"> {card.cardExpiry ? card.cardExpiry : "YY/MM"} </h4>
+                        </div>
+                    </div>
+
+                    <h4 className="cardValidDate"> {card.cardMake ? card.cardMake : "CHOOSE BANK"} </h4>
+
+                    
 
 
+                </div>
+            </div>
         </div>
 
     )
