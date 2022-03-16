@@ -82,6 +82,107 @@
   font-style: normal;
 }
 
+.cardname {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 382px;
+  height: 30px;
+  text-align: left;
+}
+
+.cardname label {
+  font-size: 12px;
+  font-style: normal;
+}
+
+.cardname input {
+  position: relative;
+  width: 382px;
+  height: 30px;
+  margin: 0 auto;
+  font-size: large;
+
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+
+.validCcvName {
+  font-size: 12px;
+  font-style: normal;
+}
+
+.validText{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 382px;
+  text-align: left;
+  top: 17px;
+}
+
+.ccvText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 382px;
+  text-align: left;
+  padding-left: 380px;
+  
+}
+
+#validthru {
+  position: relative;
+  width: 175px;
+  height: 30px;
+  
+
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-left: -30px;
+}
+
+#ccv {
+  position: relative;
+  width: 175px;
+  height: 30px;
+  
+
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.vendor1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 382px;
+  height: 30px;
+  text-align: left;
+
+  font-size: 12px;
+  font-style: normal;
+}
+
+#vendor {
+  position: relative;
+  width: 382px;
+  height: 30px;
+  margin: 0 auto;
+  font-size: large;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-top: -16px;
+}
 
 /* Card design i Card */
 
@@ -115,9 +216,63 @@
 
 .cardHolderNumber {
   padding-top: 120px;
+  font-size: 30px;
 
 }
 
+
+/* YY/MM + rubrik på kortet */
+
+.yymm {
+  position: relative;
+  font-size: 9px;
+  margin-top: -20px;
+  padding-left: 120px;
+  text-transform: uppercase;
+}
+
+.cardValidThru {
+  position: relative;
+  margin-top: -10px;
+  font-size: 13px;
+  text-transform: uppercase;
+
+}
+
+.addButton{
+  margin-top: 90px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* namn + rubrik på namnet på kortet */
+.cardHname {
+  position: relative;
+  font-size: 9px;
+  margin-top: -15px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.cardHolder {
+  position: relative;
+  margin-top: -10px;
+  font-size: 13px;
+  text-transform: uppercase;
+  
+  position: absolute;
+  width: auto;
+  height: 32px;
+  word-break: keep-all;
+  white-space: nowrap;
+
+}
 
 /* 
 .cardHolder {
@@ -167,7 +322,7 @@ text-transform: uppercase;
   margin-top: 25px;
   
 
-  background-color: #4CAF50; /* Green */
+  background-color: rgb(136, 4, 4); /* Green */
   border: none;
   color: white;
   padding: 15px 32px;

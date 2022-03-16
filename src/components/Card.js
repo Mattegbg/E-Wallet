@@ -14,7 +14,7 @@ function Card(props) {
     const { card, selectCard, removeCard, selected } = props
     var className = "card";
 
-    var cardMakeLogo = ""
+    var cardMakeLogo = Bitcoin;
     if (card.cardMake !== undefined) {
       
         className += " " + card.cardMake;
@@ -61,20 +61,20 @@ function Card(props) {
 
                     <img src={chipLight} alt="chip" className='cardchip'></img>
                     <img src={cardMakeLogo} alt="cardMake" className='cardMaker'></img>
-                    <h2 className="cardHolderNumber"> {card.cardNumber ? card.cardNumber : "**** **** **** ****"} </h2>
+                    <p className="cardHolderNumber"> {card.cardNumber ? card.cardNumber : "**** **** **** ****"} </p>
                     
                     <div className='nameMonthText'>
-                        <div>
-                            <h5>CARDHOLDER NAME</h5>
-                            <h4 className="cardHolder"> {card.cardName ? card.cardName : "YOUR NAME"} </h4>
+                        <div className='cardHname'>
+                            <p>CARDHOLDER NAME</p>
+                            <p className="cardHolder"> {card.cardName ? card.cardName : "FIRSTNAME LASTNAME"} </p>
                         </div>
-                        <div>
-                        <h5>YY/MM</h5>
-                        <h4 className="cardValidThru"> {card.cardExpiry ? card.cardExpiry : "YY/MM"} </h4>
+                        <div className='yymm'>
+                            <p>VALID THRU</p>
+                            <p className="cardValidThru"> {card.cardExpiry ? card.cardExpiry : "YY/MM"} </p>
                         </div>
                     </div>
 
-                    <h4 className="cardValidDate"> {card.cardMake ? card.cardMake : "CHOOSE BANK"} </h4>
+                    {/* <h4 className="cardValidDate"> {card.cardMake ? card.cardMake : ""} </h4>  */}
 
                     
 

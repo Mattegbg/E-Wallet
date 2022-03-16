@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Card from '../components/Card';
 
 function Home(props) {
-    let cardsWithoutSelected = props.cards.filter(card => card.id!==props.selected.id  )  //cardsWithoutSelected går igenom alla kort och tar bort selected från stacken
+    let cardsWithoutSelected = props.cards.filter(card => card.cardNumber!==props.selected.cardNumber  )  //cardsWithoutSelected går igenom alla kort och tar bort selected från stacken
     return (
         <section>
             <Top headline='E-Wallet' />

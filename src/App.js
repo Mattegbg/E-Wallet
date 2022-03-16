@@ -70,7 +70,7 @@ function App() {
 //ta bort korten i Home
 function removeCard(card){
   if(cards.length > 1) {
-    let newCards=cards.filter(c=> c.id!==card.id)
+    let newCards=cards.filter(c=> c.cardNumber!==card.cardNumber)
     setCards(newCards)
     setSelected(newCards[0])
   }
